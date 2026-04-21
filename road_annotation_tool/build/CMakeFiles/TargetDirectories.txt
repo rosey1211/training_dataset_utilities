@@ -1,0 +1,3 @@
+/home/rosey1211/projects/road_annotation_tool/build/CMakeFiles/image_viewer.dir
+/home/rosey1211/projects/road_annotation_tool/build/CMakeFiles/edit_cache.dir
+/home/rosey1211/projects/road_annotation_tool/build/CMakeFiles/rebuild_cache.dir
