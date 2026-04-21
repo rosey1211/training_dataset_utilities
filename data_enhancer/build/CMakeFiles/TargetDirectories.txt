@@ -1,0 +1,3 @@
+/home/rosey1211/projects/data_enhancer/build/CMakeFiles/augment.dir
+/home/rosey1211/projects/data_enhancer/build/CMakeFiles/edit_cache.dir
+/home/rosey1211/projects/data_enhancer/build/CMakeFiles/rebuild_cache.dir
