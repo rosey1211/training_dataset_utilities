@@ -1,0 +1,3 @@
+/home/rosey1211/projects/clean_labels/build/CMakeFiles/clean_labels.dir
+/home/rosey1211/projects/clean_labels/build/CMakeFiles/edit_cache.dir
+/home/rosey1211/projects/clean_labels/build/CMakeFiles/rebuild_cache.dir
