@@ -1,0 +1,36 @@
+# dataset_manager.ini — configuration for the dataset_manager tool
+# Lines starting with # are ignored.
+# Whitespace around = is stripped.
+
+# ---- Directories ------------------------------------------------------------
+# Root directory that contains all source dataset subdirectories.
+root_dir = /home/rosey1211/projects/road_annotation_tool/training_data
+
+# Name of the composite output dataset folder (created under root_dir).
+# Will contain train/ and test/ subdirectories, each with a labels.csv.
+composite_name = diu_abrided_diverse_dataset
+
+# ---- Source datasets --------------------------------------------------------
+# Comma-separated list of subdirectory names (under root_dir) to include.
+# All listed directories must contain a labels.csv file.
+datasets = diu_gravel_road0,diu_gravel_road1,diu_data1
+
+# ---- Retention --------------------------------------------------------------
+# Fraction of all collected images to keep before the train/test split.
+# Images are selected randomly (the pool is shuffled first).
+# 1.0 = keep all images.  0.5 = keep a random 50%.
+# Use this to reduce dataset size when the full set is too large.
+retention_fraction = 0.5
+
+# ---- Train / test split -----------------------------------------------------
+# Fraction of all images assigned to the training set.
+# Remainder goes to the test set.  Must be in (0.0, 1.0).
+train_fraction = 0.75
+
+# ---- Reproducibility --------------------------------------------------------
+# Shuffle images randomly before splitting (recommended to avoid ordering bias).
+shuffle = true
+
+# Random seed for the shuffle.  Set to 0 to use a different random seed
+# each run.  Set to any non-zero integer for a reproducible split.
+seed = 0
