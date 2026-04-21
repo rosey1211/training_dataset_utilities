@@ -1,0 +1,3 @@
+/home/rosey1211/projects/dataset_viewer/build/CMakeFiles/dataset_viewer.dir
+/home/rosey1211/projects/dataset_viewer/build/CMakeFiles/edit_cache.dir
+/home/rosey1211/projects/dataset_viewer/build/CMakeFiles/rebuild_cache.dir
