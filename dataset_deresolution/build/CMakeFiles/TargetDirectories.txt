@@ -1,0 +1,3 @@
+/home/rosey1211/training_dataset_utilities/dataset_deresolution/build/CMakeFiles/dataset_deresolution.dir
+/home/rosey1211/training_dataset_utilities/dataset_deresolution/build/CMakeFiles/edit_cache.dir
+/home/rosey1211/training_dataset_utilities/dataset_deresolution/build/CMakeFiles/rebuild_cache.dir

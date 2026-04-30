@@ -1,0 +1,20 @@
+# dataset_deresolution.ini — configuration for dataset_deresolution tool
+# Lines starting with # are ignored.
+
+# ---- Source dataset ---------------------------------------------------------
+# Full path to the source dataset directory containing PNG images,
+# labels.csv, and dataset.info.
+source_dir = /path/to/training_data/my_dataset
+
+# ---- Output dataset ---------------------------------------------------------
+# Full path to the output directory where resized images will be written.
+# This directory will be created if it does not exist.
+# Use a descriptive name to indicate the resolution.
+output_dir = /path/to/training_data/my_dataset_160x120
+
+# ---- Target resolution ------------------------------------------------------
+# Width and height of the output images in pixels.
+# INTER_AREA interpolation is used which gives the best quality when
+# downscaling (averages pixel neighbourhoods rather than sampling).
+target_width  = 160
+target_height = 120
