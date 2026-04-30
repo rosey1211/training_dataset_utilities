@@ -128,9 +128,15 @@ int main(int argc, char* argv[])
         std::cerr << "ERROR: source_dir \"" << cfg.source_dir << "\" not found.\n";
         return 1;
     }
-    if (fs::canonical(fs::path(cfg.source_dir)) ==
+    // Check source and output are not the same directory
+    // Use weakly_canonical for both so the check works even if output_dir
+    // doesn't exist yet (weakly_canonical doesn't require the path to exist)
+    if (fs::weakly_canonical(fs::path(cfg.source_dir)) ==
         fs::weakly_canonical(fs::path(cfg.output_dir))) {
-        std::cerr << "ERROR: source_dir and output_dir must be different.\n";
+        std::cerr << "ERROR: source_dir and output_dir must be different.\n"
+                  << "       source_dir : " << cfg.source_dir << "\n"
+                  << "       output_dir : " << cfg.output_dir << "\n"
+                  << "       Please specify a different output_dir in the config.\n";
         return 1;
     }
 
