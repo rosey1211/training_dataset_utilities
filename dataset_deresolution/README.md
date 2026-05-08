@@ -1,0 +1,1 @@
+This module will take in one image dataset and make a lower resolution version of it with a new name.  It will move over the dataset.info and labels.csv files as well.  The input and output dataset names are specified in the dataset_deresolution.ini file.
